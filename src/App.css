@@ -3,3 +3,21 @@
 * {
   margin: 0;
 }
+
+#wrapper > div {
+  padding-top: 100px;
+}
+
+#wrapper #main {
+  padding-top: 0;
+}
+
+#wrapper #top {
+  padding-top: 0;
+}
+
+#wrapper {
+  background-image: url("./pictures/worn_dots.png");
+  background-attachment: fixed;
+  padding: 0;
+}

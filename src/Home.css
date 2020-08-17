@@ -1,7 +1,5 @@
-.home {
-    background-image: url("./pictures/worn_dots.png");
-    background-attachment: fixed;
-    height: 100%;
+.home { 
+    min-height: 800px;
 }
 
 .home__title {
@@ -9,11 +7,10 @@
     font-weight: 800;
     font-size: 9vw;
     text-align: center;
-    padding-top: 30px;
+    padding-top: 50px;
 }
 
 .home__description {
     margin: 50px 100px;
-    font-size: 1.4vw;
-    
+    font-size: 1.4vw
 }
