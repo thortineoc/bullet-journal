@@ -16,7 +16,8 @@ function Home() {
             <p className="home__description">
             You can navigate this page using navbar at the top. Calendar allows you to save comming up events and helps with remebering
             important dates. Our to-do list and daily tracker will help you with getting track of everyday task and your daily routine.
-            You can also make loose notes with the notepad. You are going to become more organized and won't forget about anything 😉
+            You can also make loose notes with the notepad. You are going to become more organized and won't forget about anything  
+            <span role="img" aria-label="smile"> 😉 </span>
             </p>
         </div>
     )
