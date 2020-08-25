@@ -2,26 +2,24 @@
     min-height: 800px;
 }
 
-.list__options {
-    margin-left: auto;
-    margin-right: auto;
+.list__wrapper {
+    border: 10px dotted black;
+    background-color: #c2d8d8;
     max-width: 600px;
-    display: flex;
-    flex-direction: column;
-}
-
-.list__row {
-    display: flex;
-    align-items: center;
-}
-
-.list__input {
-    width: 70%;
-    height: 50px;
-    margin: 10px;
+    margin: 10px auto;
+    border-radius: 25px;
+    min-height: 500px;
 }
 
 .list__button {
-    margin: 10px;
+    background-color: #000547;
+    color: white;
+    border: none;
     padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.list__button:hover {
+    color: greenyellow;
 }

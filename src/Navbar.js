@@ -12,7 +12,7 @@ function Navbar() {
                 <span>Calendar</span>
             </Scrollchor>
             <Scrollchor to="#list" animate={{duration:600}} className="navbar__link">
-                <span>To-do</span>
+                <span>To-do list</span>
             </Scrollchor>
         </nav>
     )

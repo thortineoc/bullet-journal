@@ -34,16 +34,10 @@ class List extends React.Component {
     render() {
         return (
             <div className="list">
-                <h1 className="home__title">List</h1>
-                <Todos todos={this.state.todos} deleteTodo={this.deleteTodo} />
-                <div className="list__options">
-                    <div className="list__row">
-                        <AddTodo addTodo={this.addTodo}/>
-                    </div>
-                    <div className="list__row">
-                        <button className="list__button">Clear task number</button>
-                        <input type="number" id="taskNumber" />
-                    </div>
+                <h1 className="home__title">To-do list</h1>
+                <div className="list__wrapper">
+                    <AddTodo addTodo={this.addTodo}/>
+                    <Todos todos={this.state.todos} deleteTodo={this.deleteTodo} />
                     <button className="list__button" onClick={this.clearList}>Clear whole list</button>
                 </div>
             </div>

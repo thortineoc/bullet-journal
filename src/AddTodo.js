@@ -16,10 +16,10 @@ class AddTodo extends Component {
     }
     render() {
         return (
-        <div>
+        <div className="addTodo">
             <form onSubmit={this.handleSubmit}>
-                <label>Add</label>
-                <input type="text" onChange={this.handleChange} />
+                <input type="text" onChange={this.handleChange} placeholder="Type a new task..." />
+                <button type="submit" className="list__button">Add</button>
             </form>
         </div>
         )
