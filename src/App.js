@@ -3,7 +3,7 @@ import './App.css';
 import Home from './Home';
 import Navbar from './Navbar';
 import Calendar from './Calendar';
-import List from './List';
+import List from './List/List';
 
 function App() {
   return (
