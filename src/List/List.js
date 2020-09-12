@@ -53,7 +53,7 @@ class List extends Component {
                 <h1 className="home__title">To-do list</h1>
                 <div className="list__wrapper">
                     <AddTodo addTodo={this.addTodo}/>
-                    <Todos todos={this.state.todos} deleteTodo={this.deleteTodo} toggleTodo={this.toogleTodo}/>
+                    <Todos todos={this.state.todos} deleteTodo={this.deleteTodo} toogleTodo={this.toogleTodo}/>
                     <button className="list__button" onClick={this.clearList}>Clear whole list</button>
                 </div>
             </div>
