@@ -25,10 +25,10 @@ function List() {
         });
         setTodos(newTodos)
     }
-    const addTodo = todo => {
+    const addTodo = content => {
         const newItem = {
             id: uuid(),
-            content: todo,
+            content,
             completed: false
         }
         const newTodos = [...todos, newItem];
