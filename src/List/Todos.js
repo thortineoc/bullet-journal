@@ -1,6 +1,8 @@
 import React from 'react';
+import db from '../firebase';
+import ClearIcon from '@material-ui/icons/Clear';
 
-const Todos = ({ todos, deleteTodo, toogleTodo }) => {
+const Todos = ({ todos, toogleTodo }) => {
     const todoList = todos.length ? (
         todos.map(todo => {
             return (
@@ -12,7 +14,7 @@ const Todos = ({ todos, deleteTodo, toogleTodo }) => {
                             color: todo.completed ? "grey" : "black"
                         }}
                     >{todo.content}</li>
-                    <button className="todos__button" onClick={() => {deleteTodo(todo.id)}}>X</button>
+                    <ClearIcon style={{color: 'red', marginLeft: '5px'}} className="todos__delete" onClick={event => {db.collection('list').doc(todo.id).delete()}} />
                 </div>
             );
         })
