@@ -7,14 +7,23 @@ const Todos = ({ todos, toogleTodo }) => {
         todos.map(todo => {
             return (
                 <div key={todo.id} className="todos__item">
-                    <input type="checkbox" onClick={() => {toogleTodo(todo.id)}} className="todos__checkbox" />
+                    <input 
+                     type="checkbox"
+                     onClick={() => {toogleTodo(todo.id)}}
+                     className="todos__checkbox"
+                     checked={todo.completed ? true : false}
+                    />
                     <li className="todos__text"
                         style = {{
                             textDecoration: todo.completed ? "line-through" : null,
                             color: todo.completed ? "grey" : "black"
                         }}
                     >{todo.content}</li>
-                    <ClearIcon style={{color: 'red', marginLeft: '5px'}} className="todos__delete" onClick={event => {db.collection('list').doc(todo.id).delete()}} />
+                    <ClearIcon
+                     style={{color: 'red', marginLeft: '5px', cursor: "pointer"}}
+                     className="todos__delete"
+                     onClick={event => {db.collection('list').doc(todo.docId).delete()}}
+                    />
                 </div>
             );
         })

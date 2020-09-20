@@ -13,9 +13,13 @@ function List() {
         db.collection('list').orderBy('timestamp', 'desc').onSnapshot(snapschot => {
             setTodos(snapschot.docs.map(doc => ({
                 content: doc.data().content,
-                id: doc.id
+                id: doc.data().id,
+                completed: doc.data().completed,
+                timestamp: doc.data().timestamp,
+                docId: doc.id
             })));
         })
+        console.log("snapchot");
     }, []);
     {/*}
     const deleteTodo = id => {
@@ -25,30 +29,25 @@ function List() {
         setTodos(newTodos);
     }*/}
     const toogleTodo = id => {
-        const newTodos = todos.map(todo => {
+        for(let todo of todos) {
             if(todo.id === id) {
-                return {
-                    ...todo,
-                    completed: !todo.completed
-                }
+                db.collection('list').doc(todo.docId).update({completed: !todo.completed})
             }
-            return todo;
-        });
-        setTodos(newTodos)
+        }
     }
     const addTodo = content => {
         const newItem = {
-            id: uuid(),
             content,
+            id: uuid(),
             completed: false,
-            timestamp: firebase.firestore.FieldValue.serverTimestamp()
+            timestamp: firebase.firestore.FieldValue.serverTimestamp(),
         }
         db.collection('list').add(newItem);
         // setTodos([...todos, newItem]);
     }
     const clear = event => {
-        for(let i=0; i<todos.length; i++) {
-            db.collection('list').doc(todos[i].id).delete();
+        for(let todo of todos) {
+            db.collection('list').doc(todo.docId).delete();
         }
     }
     return (
