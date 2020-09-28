@@ -12,12 +12,14 @@ const Todos = ({ todos, toogleTodo }) => {
                      onClick={() => {toogleTodo(todo.id)}}
                      className="todos__checkbox"
                      checked={todo.completed ? true : false}
+                     style={{cursor: "pointer"}}
                     />
-                    <li className="todos__text"
-                        style = {{
-                            textDecoration: todo.completed ? "line-through" : null,
-                            color: todo.completed ? "grey" : "black"
-                        }}
+                    <li 
+                     className="todos__text"
+                     style={{
+                        textDecoration: todo.completed ? "line-through" : null,
+                        color: todo.completed ? "grey" : "black"
+                    }}
                     >{todo.content}</li>
                     <ClearIcon
                      style={{color: 'red', marginLeft: '5px', cursor: "pointer"}}

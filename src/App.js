@@ -2,8 +2,9 @@ import React from 'react';
 import './App.css';
 import Home from './Home';
 import Navbar from './Navbar';
-import Calendar from './Calendar';
+import MyCalendar from './Calendar';
 import List from './List/List';
+import Tracker from './Tracker/Tracker';
 
 function App() {
   return (
@@ -14,10 +15,13 @@ function App() {
         <Home />
       </div>
       <div id="calendar">
-        <Calendar />
+        <MyCalendar />
       </div>
       <div id="list">
         <List />
+      </div>
+      <div id="tracker">
+        <Tracker />
       </div>
     </div>
   );

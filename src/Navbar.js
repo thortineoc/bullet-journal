@@ -14,9 +14,12 @@ function Navbar() {
             <Scrollchor to="#list" animate={{duration:600}} className="navbar__link">
                 <span>To-do list</span>
             </Scrollchor>
+            <Scrollchor to="#tracker" animate={{duration:600}} className="navbar__link">
+                <span>Daily tracker</span>
+            </Scrollchor>
         </nav>
     )
 }
 
-export default Navbar
+export default Navbar;
 
