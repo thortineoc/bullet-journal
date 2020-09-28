@@ -2,22 +2,28 @@ import React, { useState } from 'react';
 import './Tracker.css';
 import Row from './Row';
 import moment from 'moment';
+import { InputLabel, Input, Button } from '@material-ui/core';
 
 function Tracker() {
     const [list, setList] = useState([]);
     const [value, setValue] = useState('');
-    
+
     const handleSubmit = e => {
         e.preventDefault();
         if(!value) return;
         setList([...list, value]);
         setValue('');
     }
-    // let number = 0;
     const checkMonth = month => {
         switch(month) {
             case 0: return {name: 'January', number: 31};
-            case 1: return {name: 'February', number: 29};
+            case 1: {
+                if(moment(moment().year()).isLeapYear()) { 
+                return {name: 'February', number: 29}
+                } else { 
+                return {name: 'February', number: 28};
+                }
+            }
             case 2: return {name: 'March', number: 31};
             case 3: return {name: 'April', number: 30};
             case 4: return {name: 'May', number: 31};
@@ -31,7 +37,6 @@ function Tracker() {
             default: console.log('checkMonth error');
         }
     }
-
     let result = checkMonth(moment().month());
 
     return (
@@ -40,12 +45,13 @@ function Tracker() {
             <div className="tracker__wrapper">
                 <h2>{result.name} {moment().year()}</h2>
                 <form onSubmit={handleSubmit}>
-                    <label>Your activity</label>
-                    <input type="text" value={value} onChange={e => setValue(e.target.value)}></input>
-                    <button type="submit">Add</button>
+                    <InputLabel>New activity</InputLabel>
+                    <Input type="text" value={value} onChange={e => setValue(e.target.value)}></Input>
+                    <Button>Add</Button>
                 </form>
+                <Row isFirst={true} activity='activity' size={result.number} />
                 {list.map((el, index) => (
-                    <Row activity={el} size={result.number} index={index} key={index}/>
+                    <Row isFirst={false} activity={el} size={result.number} index={index} key={index}/>
                 ))}
             </div>
         </div>
@@ -53,12 +59,3 @@ function Tracker() {
 }
 
 export default Tracker;
-
-{/*
-    <Dropdown num={result.number}/>
-        <form onSubmit={handleSubmit}>
-            <label>Your activity</label>
-            <input type="text" value={value} onChange={e => setValue(e.target.value)}></input>
-            <button type="submit">Add</button>
-        </form>
- */}

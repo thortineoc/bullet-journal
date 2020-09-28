@@ -4,9 +4,9 @@
 
 .tracker__wrapper {
     margin: auto;
-    max-width: 600px;
-    border: 2px solid black;
-    background-color: white;
+    max-width: 850px;
+    background-color: lightblue;
+    padding: 10px;
 }
 
 table, th, td {

@@ -1,12 +1,15 @@
 import React from 'react'
 
-function Row({activity, size, index, }) {
-    console.log(`size is ${size}`);
+function Row({isFirst, activity, size, index }) {
     const createRow = n => {
         const cells = [];
         for(let i=0; i<n; i++) {
             cells.push(
-            <td style={{cursor: "pointer"}} onClick={e => e.target.style.backgroundColor="green"}> </td>
+                isFirst ? (
+                <td>{i+1}</td>
+                ) : (
+                <td style={{cursor: "pointer"}} onClick={e => e.target.style.backgroundColor="green"}> </td>
+                )
             )
         }
         return cells;
