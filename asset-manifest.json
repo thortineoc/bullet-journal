@@ -1,23 +1,26 @@
 {
   "files": {
-    "main.css": "/bullet-journal/static/css/main.b89a4df2.chunk.css",
-    "main.js": "/bullet-journal/static/js/main.3bda845e.chunk.js",
-    "main.js.map": "/bullet-journal/static/js/main.3bda845e.chunk.js.map",
+    "main.css": "/bullet-journal/static/css/main.e7250e80.chunk.css",
+    "main.js": "/bullet-journal/static/js/main.c3c40545.chunk.js",
+    "main.js.map": "/bullet-journal/static/js/main.c3c40545.chunk.js.map",
     "runtime-main.js": "/bullet-journal/static/js/runtime-main.50da1f57.js",
     "runtime-main.js.map": "/bullet-journal/static/js/runtime-main.50da1f57.js.map",
-    "static/js/2.fd59de17.chunk.js": "/bullet-journal/static/js/2.fd59de17.chunk.js",
-    "static/js/2.fd59de17.chunk.js.map": "/bullet-journal/static/js/2.fd59de17.chunk.js.map",
+    "static/css/2.25b83785.chunk.css": "/bullet-journal/static/css/2.25b83785.chunk.css",
+    "static/js/2.f9f5ce13.chunk.js": "/bullet-journal/static/js/2.f9f5ce13.chunk.js",
+    "static/js/2.f9f5ce13.chunk.js.map": "/bullet-journal/static/js/2.f9f5ce13.chunk.js.map",
     "index.html": "/bullet-journal/index.html",
-    "precache-manifest.cdd1dd4733648dd3635ed935fb7e9ae5.js": "/bullet-journal/precache-manifest.cdd1dd4733648dd3635ed935fb7e9ae5.js",
+    "precache-manifest.5d76d779d556c6dbfcc591cbb307c285.js": "/bullet-journal/precache-manifest.5d76d779d556c6dbfcc591cbb307c285.js",
     "service-worker.js": "/bullet-journal/service-worker.js",
-    "static/css/main.b89a4df2.chunk.css.map": "/bullet-journal/static/css/main.b89a4df2.chunk.css.map",
-    "static/js/2.fd59de17.chunk.js.LICENSE.txt": "/bullet-journal/static/js/2.fd59de17.chunk.js.LICENSE.txt",
-    "static/media/Home.css": "/bullet-journal/static/media/worn_dots.bf799368.png"
+    "static/css/2.25b83785.chunk.css.map": "/bullet-journal/static/css/2.25b83785.chunk.css.map",
+    "static/css/main.e7250e80.chunk.css.map": "/bullet-journal/static/css/main.e7250e80.chunk.css.map",
+    "static/js/2.f9f5ce13.chunk.js.LICENSE.txt": "/bullet-journal/static/js/2.f9f5ce13.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/bullet-journal/static/media/worn_dots.bf799368.png"
   },
   "entrypoints": [
     "static/js/runtime-main.50da1f57.js",
-    "static/js/2.fd59de17.chunk.js",
-    "static/css/main.b89a4df2.chunk.css",
-    "static/js/main.3bda845e.chunk.js"
+    "static/css/2.25b83785.chunk.css",
+    "static/js/2.f9f5ce13.chunk.js",
+    "static/css/main.e7250e80.chunk.css",
+    "static/js/main.c3c40545.chunk.js"
   ]
 }
