@@ -3,7 +3,6 @@ import './css/Home.css';
 
 function Home() {
     return (
-
         <div className="home">
             <h1 className="home__title">Bullet journal</h1>
             <p className="home__description">

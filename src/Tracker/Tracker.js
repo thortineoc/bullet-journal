@@ -47,7 +47,7 @@ function Tracker() {
                 <form onSubmit={handleSubmit}>
                     <InputLabel>New activity</InputLabel>
                     <Input type="text" value={value} onChange={e => setValue(e.target.value)}></Input>
-                    <Button>Add</Button>
+                    <Button type="submit">Add</Button>
                 </form>
                 <Row isFirst={true} activity='activity' size={result.number} />
                 {list.map((el, index) => (
