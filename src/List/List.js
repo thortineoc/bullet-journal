@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './List.css';
+import '../css/List.css';
 import Todos from './Todos.js';
 import AddTodo from './AddTodo';
 import uuid from 'uuid';

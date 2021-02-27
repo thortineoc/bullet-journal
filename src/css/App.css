@@ -17,7 +17,7 @@
 }
 
 #wrapper {
-  background-image: url("./pictures/worn_dots.png");
+  background-image: url("../pictures/worn_dots.png");
   background-attachment: fixed;
   padding: 0;
 }
