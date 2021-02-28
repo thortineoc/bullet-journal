@@ -1,3 +1,46 @@
 .login {
-    min-width: 1800px;
+    min-height: 600px;
+}
+
+.login__container {
+    border: 10px dotted black;
+    background-color: #c2d8d8;
+    max-width: 400px;
+    margin: auto;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.login__title {
+    margin: auto;
+    padding: 50px;
+}
+
+.login__form {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.login__form > div {
+    margin: 20px;
+}
+
+.login__links {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+.login__link {
+    margin: 10px;
+    color: black;
+}
+
+.login__link::hover {
+    color: blue;
 }
