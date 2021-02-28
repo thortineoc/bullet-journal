@@ -14,13 +14,14 @@ function App() {
       <Router>
         <Switch>
           <Route path="/login">
-            <Login />
+            <div class="login_link">
+              <Login />
+            </div>
           </Route>
           <Route path="/">
             <div id="top" />
             <Navbar />
             <div id="main">
-              <a href="/login">Login</a>
               <Home />
             </div>
             <div id="calendar">
