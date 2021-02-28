@@ -1,0 +1,47 @@
+.register {
+    min-height: 800px;
+}
+
+.register__container {
+    border: 10px dotted black;
+    background-color: #c2d8d8;
+    max-width: 400px;
+    margin: auto;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+}
+
+.register__title {
+    margin: auto;
+    padding: 50px;
+}
+
+.register__form {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.register__form > div {
+    margin: 20px;
+}
+
+.register__links {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+.register__link {
+    margin: 10px;
+    color: black;
+}
+
+.register__link::hover {
+    color: blue;
+}

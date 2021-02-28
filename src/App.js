@@ -3,6 +3,7 @@ import './css/App.css';
 import Home from './Home';
 import Navbar from './Navbar';
 import Login from './Login';
+import Register from './Register';
 import MyCalendar from './Calendar';
 import List from './List/List';
 import Tracker from './Tracker/Tracker';
@@ -16,6 +17,11 @@ function App() {
           <Route path="/login">
             <div class="login_link">
               <Login />
+            </div>
+          </Route>
+          <Route path="/register">
+            <div class="login_link">
+              <Register />
             </div>
           </Route>
           <Route path="/">
