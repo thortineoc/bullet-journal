@@ -25,6 +25,6 @@
     color: black;
 }
 
-.home__link::hover {
+.home__link:hover {
     color: blue;
 }

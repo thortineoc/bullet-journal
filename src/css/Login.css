@@ -41,6 +41,6 @@
     color: black;
 }
 
-.login__link::hover {
+.login__link:hover {
     color: blue;
 }
